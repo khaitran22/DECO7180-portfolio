@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Khai Tran: Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Reference from: https://getbootstrap.com/ -->
+    <link href="./bootstrap-4.6.1-dist/css/bootstrap.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <!-- Refernce from: https://fonts.google.com/specimen/Mali?category=Handwriting#standard-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Reference from: https://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Reference from: https://getbootstrap.com/ -->
+    <script src="./bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <nav class="top_nav">
+      <a href="#homepage">Home</a>
+      <a href="#about_me">About Me</a>
+      <a href="#deliverables_section">Deliverables</a>
+      <a href="#course_reflection">Course Reflection</a>
+      <a href="#showcase">Innovation Showcase at ITEE</a>
+      <a href="#footer">Footer</a>
+    </nav>
+
+    <div id="homepage">
+      <video autoplay muted loop id="video_background">
+        <source src="./assets/video_background_ocean.mp4" />
+      </video>
+      <div class="content">
+        <h1>KHAI TRAN</h1>
+        <p>DECO7180 - PORTFOLIO</p>
+      </div>
+    </div>
+
+    <div id="about_me">
+      <h2>ABOUT ME</h2>
+      <hr />
+      <p>
+        Hi there! I am Khai, a diligent and passionate master student in
+        Information Technology program at The University of Queensland. Becoming
+        a Machine Learning researcher is my future career ambition. I am strong
+        at thinking logically and solving problem indenpendently, that is why I
+        enjoy researching solution for my own problems. Before studying the
+        master program at UQ, I had 8-month experience working as a web
+        developer at a start-up company in Vietnam. During my spare time, I
+        listen to music, read news about machine learning techniques and play
+        soccer.
+      </p>
+
+      <p>
+        Don't hestitate to contact me at
+        <a href="mailto:tranphan.khai@gmail.com">tranphan.khai@gmail.com</a> for
+        a chat or a soccer match.
+      </p>
+    </div>
+
+    <div id="deliverables_section">
+      <h2>DELIVERABLES</h2>
+      <hr />
+      <!-- Reference from: https://getbootstrap.com/docs/4.0/components/carousel/#with-indicators -->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="deliverable">
+              <img src="./assets/quokka.jpg" />
+              <h3>DELIVERABLE 2A</h3>
+              <p>Design Inspiration</p>
+              <p>
+                In this deliverable, each student is required to express idea of
+                "decorating" a given dataset.
+              </p>
+              <a class="2a" id="read_more">Read more</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="deliverable">
+              <img src="./assets/emu.jpg" />
+              <h3>DELIVERABLE 2C</h3>
+              <p>Product Proposal</p>
+              <p>
+                After forming a group, each group is required to propose what
+                dataset that group uses and how the group make dataset look
+                interesting.
+              </p>
+              <a class="2c" id="read_more">Read more</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="deliverable">
+              <img src="./assets/platypus.jpg" />
+              <h3>DELIVERABLE 2D</h3>
+              <p>Work-in-Progress Report</p>
+              <p>
+                It's the time each group reports the final decision for product
+                by report, presentation and parts of implemented website.
+              </p>
+              <a class="2d" id="read_more">Read more</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="deliverable">
+              <img src="./assets/koala.jpg" />
+              <h3>DELIVERABLE 2E</h3>
+              <p>Final Delivery</p>
+              <p>
+                Wrapping the project by a awesome tradeshow and 15-page final
+                report.
+              </p>
+              <a class="2e" id="read_more">Read more</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="deliverable">
+              <img src="./assets/wallaby.jpg" />
+              <h3>DELIVERABLE 3</h3>
+              <p>Portfolio</p>
+              <p>A personal website reflecting the DECO7180 progress.</p>
+              <a class="portfolio" id="read_more">Read more</a>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev prev-deli"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a
+          class="carousel-control-next next-deli"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+
+    <div id="course_reflection">
+      <h2>COURSE REFLECTION</h2>
+      <hr />
+      <h4>Personal Goals:</h4>
+      <p>
+        At the begining of the course, there are 3 criteria I proposed for this
+        course. (1) Making a complete and interesting web-based application from
+        a public dataset. (2) Making friends with people coming from different
+        background and degrees such as Bachelor of IT, Master of IT, Master of
+        Interaction Design, etc. (3) Achieving grade 7 for this course.
+      </p>
+      <p>
+        Throughout the course, the first expectation and second expectation has
+        been achieved successfully while I have to wait for the third objective
+        until December. Regarding the first objective, our product, QLD
+        Bioseeker, was complete and far from my initial expectation. We got many
+        good feedbacks and comments from other students and examiners.
+      </p>
+      <p>
+        For the second objective, my group is diverse in background, language
+        and ages. Paul is the oldest people in the group and he is an designer.
+        Bagus is Indonesian and is the second oldest people in the group, he
+        works in the economic industry. Terrence (Terry) is a game designer
+        graduate coming from Melbourne. During the group project, we worked
+        together and overcome many issues.
+      </p>
+      <p>
+        However, due to the properties of the group where 3 of 4 people are main
+        from designers and only me is a coder. Therefore, I did not have many
+        chances to learn designing skills because I just coded for the whole
+        group project.
+      </p>
+      <h4>Thoughts about course:</h4>
+      <p>
+        Overal, the course is fun and interesting in which students collaborate
+        and do a group project based on a practical topic but there are still
+        somethings that make me not really enjoy the course 100%.
+      </p>
+      <p>
+        Personally, I found the some activities in the contact hour sessions was
+        not really helpful for the group project. For example, the Six Hats
+        activities is quite intuitive for my group because we organized weekly
+        meeting and in the meeting, we also conducted the process of debating to
+        make the website become better. Moreover, the activities during the
+        contact hour session in week 12 will be better if it could be chaned to
+        help the group project implementation. In the future, I hope several
+        last weeks of the semester could be changed to the format that students
+        can come to the classroom and student can work together with the help
+        from tutors. It looks like a co-working space and that's quite
+        interesting.
+      </p>
+      <p>
+        Another thing I want to share is the workload of the assessment. For the
+        group project, I think the time for group project development is quite
+        short because the design was not finalized until the week 9, meaning
+        there are only 4 weeks left for the group project. For the assessment 3,
+        it is quite tough to develop a website during the SWOTVAC and exam
+        period. Therefore, I hope the assessment 1 and 3 can be integrated as
+        one, the developing website requirement for assessment 3 is still kept
+        but it should be specified at the beginning of the course so students
+        can have plenty of time to doing so.
+      </p>
+    </div>
+
+    <div id="showcase">
+      <h2>INNOVATION SHOWCASE AT ITEE</h2>
+      <hr />
+      <p>
+        The Innovation Showcase happened on November 4th, 2021 at the Building
+        49 of UQ. In this event, there are a lot of projects coming from
+        different students. These project can be thesis projects or coursework
+        projects with varying areas: robotics, energy or user design experience.
+        Each category is sponsored by a company or by ITEE.
+      </p>
+      <img src="./assets/showcase.jpg" />
+      <p>
+        In this showcase, my team project was nominated for the Best User
+        Experience Design and for People’s Choice categories. Alongside with my
+        project, there are 3 more team who were nominated by course coordinator.
+        I was a main presenter and had chance to present the work to all visiors
+        and representative of Shorthand company.
+      </p>
+      <p>
+        Although my group project was not a winning team, I am still happy and
+        appreciate the chance for attending this event and demonstrating my
+        group's final project.
+      </p>
+    </div>
+
+    <div id="footer">
+      <h4>&copyKhai Tran 2021</h4>
+      <button>
+        <h4>References</h4>
+      </button>
+    </div>
+
+    <!-- Pop UP -->
+    <div class="deli_content">
+      <div class="deliveralble-outside"></div>
+      <div class="deliveralble-box">
+        <div class="deliveralble-content-header">
+          <div class="close-deli-content">&#10006;</div>
+          <h1></h1>
+        </div>
+        <div class="deliveralble-content-body"></div>
+      </div>
+    </div>
+
+    <div class="reference">
+      <div class="reference-outside"></div>
+      <div class="reference-box">
+        <div class="reference-content-header">
+          <div class="close-reference-content">&#10006;</div>
+          <h1>REFERENCE</h1>
+        </div>
+        <div class="reference-content-body">
+          <p>
+            Benhesed, I. (2019). Wallaby. Unsplash. Unsplash. Retrieved November
+            6, 2021, from https://unsplash.com/photos/8r3Gi0-MIsA.
+          </p>
+          <p>
+            Demak, C. (n.d.). Font Mali. Google fonts. Retrieved November 9,
+            2021, from
+            https://fonts.google.com/specimen/Mali?category=Handwriting#standard-styles.
+          </p>
+          <p>
+            Jerrard, M. (2020). Platypus. Unsplash. Unsplash. Retrieved November
+            6, 2021, from https://unsplash.com/photos/Vv019m_ClpY.
+          </p>
+          <p>
+            JS Foundation - js.foundation. (n.d.). JQuery UI. Retrieved October
+            31, 2021, from https://jqueryui.com/.
+          </p>
+          <p>
+            Pexels. (2020). Top View of Surfer Waiting for Sea Waves to Ride.
+            Pexels. Retrieved November 1, 2021, from
+            https://www.pexels.com/video/top-view-of-surfer-waiting-for-sea-waves-to-ride-4782595/.
+          </p>
+          <p>
+            Sharon Co Images. (2020). Emu profile. Unsplash. Unsplash. Retrieved
+            November 6, 2021, from https://unsplash.com/photos/N2j24RFyRG4.
+          </p>
+          <p>
+            Silber, J. (2011, October 10). Smooth scrolling when clicking an
+            anchor link. Stack Overflow. Retrieved November 6, 2021, from
+            https://stackoverflow.com/a/7717572.
+          </p>
+          <p>
+            Stoop, M. (2019). Quokka on Rottnest Island, Australia. Unsplash.
+            Unsplash. Retrieved November 6, 2021, from
+            https://unsplash.com/photos/Mmj9L6xnby4.
+          </p>
+          <p>
+            Thornton, J., & Otto, M. (n.d.). Bootstrap. Bootstrap · The most
+            popular HTML, CSS, and JS library in the world. Retrieved October
+            31, 2021, from https://getbootstrap.com/.
+          </p>
+          <p>
+            Whitt, J. (2016). Koala. Unsplash. Unsplash. Retrieved November 6,
+            2021, from https://unsplash.com/photos/EerxztHCjM8.
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </body>
+</html>
