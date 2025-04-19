@@ -1,1 +1,1 @@
-# DECO7180-portfolio
+# DECO7180 Personal Portfolio
